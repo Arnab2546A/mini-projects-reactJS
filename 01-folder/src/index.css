@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    background-image: url('./assets/ling.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+}   
+
+
+    /* Main Card */
+.profile-card {
+    width: 350px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cards{
+    display: flex;
+    gap: 10px;
+}
+/* Top Section */
+.card-top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-name {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+}
+
+
+/* Tech Names */
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.tech-tag {
+    padding: 5px 8px;
+    background-color: #e8f0ff;
+    color: #3158c9;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+
+/* Middle Section */
+.card-middle {
+    padding: 15px 0;
+}
+
+.profile-description {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* Bottom Section */
+.card-bottom {
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.apply-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.apply-btn:hover {
+    background-color: #1d4ed8;
+}
