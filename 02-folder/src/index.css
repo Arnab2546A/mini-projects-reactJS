@@ -1,14 +1,14 @@
 @import "tailwindcss";
 #cardTrack {
-  animation: moveLeft 20s linear infinite;
+  animation: moveLeft 35s linear infinite;
 }
 
 @keyframes moveLeft {
-  0% {
+  from {
     transform: translateX(0);
   }
 
-  100% {
-    transform: translateX(-50% -8%);
+  to {
+    transform: translateX(calc(-200% - 6rem));
   }
 }

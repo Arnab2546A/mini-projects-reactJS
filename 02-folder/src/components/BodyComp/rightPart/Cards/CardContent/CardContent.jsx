@@ -3,7 +3,7 @@ const CardContent = (props) => {
   return (
     <>
       <div className="w-10 h-10 rounded-full bg-white/90 text-black flex items-center justify-center font-bold">
-    {props.id+1}
+    {props.id}
   </div>
 
   {/* Description */}

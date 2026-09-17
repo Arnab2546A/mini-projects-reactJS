@@ -3,6 +3,7 @@ import Section1 from "./components/Section1"
 const App = () => {
   const profiles = [
   {
+    id:1,
     name: "Arjun Mehta",
     description:
       "Passionate about building clean and interactive web experiences using React and modern frontend technologies.",
@@ -13,6 +14,7 @@ const App = () => {
   },
 
   {
+    id:2,
     name: "Priya Sharma",
     description:
       "Creates simple, intuitive and visually engaging interfaces with a strong focus on user experience.",
@@ -23,6 +25,7 @@ const App = () => {
   },
 
   {
+    id:3,
     name: "Rohan Gupta",
     description:
       "Enjoys developing complete web applications and working with both frontend and backend technologies.",
@@ -33,6 +36,7 @@ const App = () => {
   },
 
   {
+    id:4,
     name: "Ananya Das",
     description:
       "Transforms ideas into useful digital products by combining design thinking, research and creativity.",
@@ -43,6 +47,7 @@ const App = () => {
   },
 
   {
+    id:5,
     name: "Vikram Patel",
     description:
       "Works on scalable APIs, databases and backend systems while focusing on performance and reliability.",
@@ -53,6 +58,7 @@ const App = () => {
   },
 
   {
+    id:6,
     name: "Sneha Roy",
     description:
       "Builds modern mobile applications with a focus on smooth performance and intuitive user interfaces.",
