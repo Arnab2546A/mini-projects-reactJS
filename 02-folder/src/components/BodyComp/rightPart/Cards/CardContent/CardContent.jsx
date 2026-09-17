@@ -1,15 +1,15 @@
 import { ArrowRight } from "lucide-react";
-const CardContent = () => {
+const CardContent = (props) => {
   return (
     <>
       <div className="w-10 h-10 rounded-full bg-white/90 text-black flex items-center justify-center font-bold">
-    01
+    {props.id+1}
   </div>
 
   {/* Description */}
   <div className="mt-auto mb-auto">
-    <p className="text-lg font-medium max-w-[250px] pt-30">
-      Learn the fundamentals and build modern web applications.
+    <p className="text-lg font-medium max-w-[250px] pt-30 text-white">
+      {props.desc}
     </p>
   </div>
 
@@ -17,8 +17,10 @@ const CardContent = () => {
   <div className="flex items-center justify-between">
 
     {/* Status */}
-    <button className="px-4 py-2 rounded-full bg-green-500/90 text-white text-sm font-medium">
-      Active
+    <button className="px-4 py-2 rounded-full text-white text-sm font-medium"
+    style={{backgroundColor:props.color}}
+    >
+      {props.status}
     </button>
 
     {/* Arrow */}
