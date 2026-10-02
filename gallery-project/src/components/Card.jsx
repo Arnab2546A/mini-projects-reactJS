@@ -1,29 +1,25 @@
-
-const Card = ({ image, name, date }) => {
+const Card = ({ card }) => {
   return (
-    <div className="group overflow-hidden rounded-2xl border border-slate-700 bg-slate-900 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
-
-      {/* Image Frame */}
-      <div className="aspect-[4/5] overflow-hidden bg-slate-800 p-2">
+    <a
+      href={card.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block"
+    >
+      <div className="border-8 border-white bg-slate-900 shadow-lg rounded-2xl overflow-hidden">
         <img
-          src={image}
-          alt={name}
-          className="h-full w-full rounded-xl object-cover transition duration-500 group-hover:scale-105"
+          src={card.download_url}
+          alt={card.author}
+          className="block w-full h-64 object-cover"
         />
+
+        <div className="p-3 text-center">
+          <h2 className="text-white font-semibold">
+            {card.author}
+          </h2>
+        </div>
       </div>
-
-      {/* Card Details */}
-      <div className="px-4 py-3">
-        <h3 className="truncate text-lg font-semibold text-white">
-          {name}
-        </h3>
-
-        <p className="mt-1 text-sm text-slate-400">
-          {date}
-        </p>
-      </div>
-
-    </div>
+    </a>
   );
 };
 
