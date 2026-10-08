@@ -1,10 +1,14 @@
-import React from 'react'
 
+import {Link, Outlet} from 'react-router-dom'
 const Contact = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center text-6xl bg-black text-white font-bold">
-      contact us
-      </div>
+    <>
+      <nav className="flex gap-6 p-4 bg-gray-800 text-white">
+        <Link to="men">Contact Men</Link>
+        <Link to="women">Contact Women</Link>
+      </nav>
+      <Outlet/>
+    </>
   )
 }
 
